@@ -1,0 +1,9 @@
+[
+    {
+        "caption": "Run VHDL Script",
+        "command": "run_vhdl_script",
+        "id": "run_vhdl_script",
+        "contexts": ["tab"],
+        "enabled": true
+    }
+]

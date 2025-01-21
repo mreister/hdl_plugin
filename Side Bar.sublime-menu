@@ -1,0 +1,10 @@
+[
+    {
+        "caption": "Create VHDL Instant",
+        "command": "run_vhdl_script",
+    },
+    {
+        "caption": "Create SV Instant",
+        "command": "run_sv_script",
+    }
+]
