@@ -30,7 +30,7 @@ def generate_vhdl_instantiation(json_data, instance_name="identifier_inst"):
         generic_mappings = []
         for generic in generics:
             generic_name = generic["name"]
-            generic_mappings.append("    {0} => {0}",format(generic_name))
+            generic_mappings.append("    {0} => {0}".format(generic_name))
         instantiation_lines.append(",\n".join(generic_mappings))
         instantiation_lines.append(")")
     
