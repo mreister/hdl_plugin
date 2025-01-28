@@ -1,6 +1,7 @@
 import sublime
 import sublime_plugin
 import subprocess
+import os 
 
 class RunSvScriptCommand(sublime_plugin.WindowCommand):
     def run(self):
@@ -15,7 +16,12 @@ class RunSvScriptCommand(sublime_plugin.WindowCommand):
             return
 
         # Path to your Python script
-        python_script = "/Users/mattreister/Sandbox/eunit_m/src/sv_extract.py"
+        path = os.path.dirname(os.path.abspath(__file__))
+
+        python_script = path + "/sv_extract.py"
+        
+        
+        print(path)
 
         try:
             # Run the Python script with the file as an argument
